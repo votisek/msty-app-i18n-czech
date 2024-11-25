@@ -1,28 +1,26 @@
 {
-  "common": {
-    "version": "Version",
-    "moreOptions": "More Options",
-    "path": "Path",
-    "discardChanges": "Discard Changes",
-    "checkForUpdates": "Check for Updates",
-    "uninstall": "Uninstall {item}",
-    "invalidJSON": "Invalid JSON",
-    "reset": "Reset {item}",
-    "save": "Save {item}",
-    "eg": "e.g. {item}",
-    "advancedConfiguration": "Advanced Configuration",
-    "appData": "App Data",
-    "appLogs": "App Logs",
-    "localAIServiceLogs": "Local AI Service Logs",
-    "mac": {
-      "locateInFolder": "Reveal in Finder"
-    },
-    "windows": {
-      "locateInFolder": "Show in File Explorer"
-    },
-    "linux": {
-      "locateInFolder": "Locate in File Manager"
-    }
+  "version": "Version",
+  "moreOptions": "More Options",
+  "path": "Path",
+  "discardChanges": "Discard Changes",
+  "checkForUpdates": "Check for Updates",
+  "uninstall": "Uninstall {item}",
+  "invalidJSON": "Invalid JSON",
+  "reset": "Reset {item}",
+  "save": "Save {item}",
+  "eg": "e.g. {item}",
+  "advancedConfiguration": "Advanced Configuration",
+  "appData": "App Data",
+  "appLogs": "App Logs",
+  "localAIServiceLogs": "Local AI Service Logs",
+  "mac": {
+    "locateInFolder": "Reveal in Finder"
+  },
+  "windows": {
+    "locateInFolder": "Show in File Explorer"
+  },
+  "linux": {
+    "locateInFolder": "Locate in File Manager"
   },
   "settings": {
     "label": "Setting | Settings",
