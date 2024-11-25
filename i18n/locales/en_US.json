@@ -1,0 +1,224 @@
+{
+  "common": {
+    "version": "Version",
+    "moreOptions": "More Options",
+    "path": "Path",
+    "discardChanges": "Discard Changes",
+    "checkForUpdates": "Check for Updates",
+    "uninstall": "Uninstall {item}",
+    "invalidJSON": "Invalid JSON",
+    "reset": "Reset {item}",
+    "save": "Save {item}",
+    "eg": "e.g. {item}",
+    "advancedConfiguration": "Advanced Configuration",
+    "appData": "App Data",
+    "appLogs": "App Logs",
+    "localAIServiceLogs": "Local AI Service Logs",
+    "mac": {
+      "locateInFolder": "Reveal in Finder"
+    },
+    "windows": {
+      "locateInFolder": "Show in File Explorer"
+    },
+    "linux": {
+      "locateInFolder": "Locate in File Manager"
+    }
+  },
+  "settings": {
+    "label": "Setting | Settings",
+    "general": {
+      "label": "General",
+      "autoGenerateChatTitle": {
+        "label": "Automatically Generate Chat Title",
+        "description": "When enabled, new chat titles will be generated automatically. For chats using online models, the title will be based on the model used and the first two messages exchanged. For conversations using a local model, title generation is always active and may result in increased token usage."
+      },
+      "enableLinksInChatMessages": {
+        "label": "Enable Links In Chat Messages",
+        "description": "Enable or disable links in chat messages. Disabling this will prevent links from being clickable. We recommend disabling this for security reasons."
+      },
+      "theme": {
+        "label": "Theme",
+        "appearance": {
+          "label": "Appearance",
+          "light": "Light",
+          "dark": "Dark",
+          "system": "System"
+        },
+        "accentColor": {
+          "label": "Accent Color"
+        },
+        "fontStyle": {
+          "label": "Font Style"
+        },
+        "codeTheme": {
+          "label": "Code Theme"
+        },
+        "fontSize": "Font Size",
+        "themeTray": "Theme Tray",
+        "toggleThemeTray": "Toggle Theme Tray"
+      },
+      "applicationInfo": {
+        "label": "Application Info",
+        "appVersion": {
+          "label": "App Version",
+          "description": {
+            "manual": "The latest updates are checked periodically and you will be notified when a new update is available. You can manually check for updates.",
+            "automatic": "The latest updates are checked periodically and installed automatically. You can also manually check for updates."
+          },
+          "viewChangelog": "View Changelog",
+          "enableAutoUpdates": "Enable Auto Updates"
+        },
+        "modelsInfo": {
+          "label": "Models Info",
+          "description": "Update your local model metadata. This information includes details about each model, but not the model files themselves. This applies to both locally stored and online models",
+          "fetchLatestModelsInfo": {
+            "label": "Fetch Latest Models Info"
+          }
+        },
+        "appSettings": {
+          "label": "App Settings",
+          "description": "Resetting app settings to their defaults can help resolve potential issues. This will restore the default user preferences, such as appearance and models path, but will not delete any data, including chats or downloaded/imported models.",
+          "resetAppSettings": {
+            "label": "Reset App Settings",
+            "success": "App settings were reset"
+          }
+        },
+        "dataPaths": {
+          "label": "Data Paths",
+          "description": "All data, including models, conversations, settings, and logs, are stored locally on your device. Only modify the contents of these directories if you are familiar with the application's file structure",
+          "activeWorkspace": "Active Workspace"
+        },
+        "helpAndDiscussions": {
+          "label": "Help & Discussions",
+          "description": "Connect with our community on Discord to get support, share your feedback, and stay informed",
+          "sayHi": "Say Hi!",
+          "viewDocs": "View Docs"
+        }
+      }
+    },
+    "localAI": {
+      "label": "Local AI Settings",
+      "manageLocalAIModels": "Manage Local AI Models",
+      "localAIService": {
+        "label": "Local AI Service",
+        "saveAndRestartService": "Save and Restart Service",
+        "restartingService": "Restarting Local AI Service",
+        "modelsDirectory": {
+          "label": "Models Directory",
+          "description": "Directory for storing local LLMs.",
+          "editModelsPath": {
+            "label": "Edit Models Path",
+            "description": "Set your desired location for downloading the models.",
+            "willRestartLocalAIWarning": " Note: Changing the models path will restart the Local AI service for the changes to take effect.",
+            "selectModelsPath": "Select Models Path",
+            "success": "Models path saved"
+          }
+        },
+        "serviceHealth": {
+          "label": "Service Health",
+          "description": "Current Local AI service status. If you are experiencing issues with Local AI, please try restarting the service.",
+          "healthStatus": {
+            "starting": "Starting",
+            "running": "Running",
+            "stopped": "Stopped",
+            "unknown": "Unknown"
+          },
+          "startService": "Start Service",
+          "restartService": "Restart Service",
+          "stopService": "Stop Service"
+        },
+        "serviceEndpoint": {
+          "label": "Service Endpoint",
+          "description": {
+            "base": "The address of the Local AI service to connect from other applications.",
+            "serviceIsNotRunning": "Once the service is running, the address will be displayed here.",
+            "serviceIsAvailableOnNetwork": "Because the service is available on the network, you can also connect to it using the Network Service URL from other devices."
+          },
+          "localURL": "Local URL",
+          "copyLocalURL": "Copy Service Local URL to clipboard",
+          "networkURL": "Network URL",
+          "copyNetworkURL": "Copy Service Network URL to clipboard",
+          "editPortNumber": {
+            "label": "Edit Port Number",
+            "success": "Local AI Service port number saved",
+            "failure": "Could not save Local AI Service port number"
+          }
+        },
+        "serviceVersion": {
+          "label": "Service Version",
+          "description": {
+            "base": "The version of the Local AI service.",
+            "mac": "You can check and update to the latest version or uninstall the service completely."
+          },
+          "startServiceToCheckVersion": "Start the service to check the version."
+        },
+        "updateService": {
+          "success": "Local AI Service has been updated to the latest version",
+          "failure": "Failed to update Local AI Service to the latest version"
+        },
+        "uninstallService": {
+          "label": "Uninstall Local AI Service?",
+          "description": "Your models are NOT removed and stay where they are. Future chats with the downloaded models will be disabled unless you reinstall the service."
+        }
+      },
+      "serviceConfigurations": {
+        "label": "Service Configurations",
+        "description": "These configurations get applied to the Local AI service when starting. The Local AI service will automatically restart after you modify and save any of these settings.",
+        "configurePortNumber": {
+          "label": "Configure Port Number",
+          "description": "Port number on which the Local AI service will run. Leave it empty to use the default port."
+        },
+        "maximumParallelChats": {
+          "label": "Maximum Parallel Chats",
+          "description": "Maximum number of concurrent chat sessions (when using split mode)."
+        },
+        "maximumLoadedModels": {
+          "label": "Maximum Loaded Models",
+          "description": "Maximum number of LLMs loaded concurrently. Keeping more LLMs ready in memory enables faster initial responses, but consumes additional system resources."
+        },
+        "enableNetworkAccess": {
+          "label": "Enable Network Access",
+          "description": "Allow other devices on your network to access this Local AI service via this device’s IP address."
+        },
+        "allowedNetworkOrigins": {
+          "label": "Allowed Network Origins",
+          "description": "List permitted network origins here (comma-separated). Each entry must begin with http:// or https://. Use * to permit all origins."
+        },
+        "captureServiceLogs": {
+          "label": "Capture Service Logs",
+          "description": "Capture service logs for debugging purposes. We recommend enabling this only when necessary."
+        },
+        "advancedConfiguration": {
+          "description": "Enter valid JSON to set environment variables for the Local AI service."
+        },
+        "save": {
+          "success": "Service configurations saved",
+          "failure": "Failed to save service configurations"
+        },
+        "reset": {
+          "success": "Service configurations reset to original values",
+          "failure": "Failed to reset service configurations"
+        }
+      },
+      "chatModelConfiguration": {
+        "label": "Chat Model Configuration",
+        "description": "These settings apply to all installed models during chat sessions.",
+        "modelKeepAliveTimeout": {
+          "label": "Model Keep-Alive Timeout",
+          "description": "Time (in minutes) to keep a model loaded in memory after use."
+        },
+        "advancedConfiguration": {
+          "description": "Enter valid JSON to pass extra parameters to models during chat sessions."
+        },
+        "save": {
+          "success": "Configuration saved and will be applied during chatting",
+          "failure": "Failed to save model configuration"
+        },
+        "reset": {
+          "success": "Chat model configuration reset to original values",
+          "failure": "Failed to reset chat model configuration"
+        }
+      }
+    }
+  }
+}
