@@ -1,220 +1,220 @@
 {
-  "version": "Version",
-  "moreOptions": "More Options",
-  "path": "Path",
-  "discardChanges": "Discard Changes",
-  "checkForUpdates": "Check for Updates",
-  "uninstall": "Uninstall {item}",
-  "invalidJSON": "Invalid JSON",
-  "reset": "Reset {item}",
-  "save": "Save {item}",
-  "eg": "e.g. {item}",
-  "advancedConfiguration": "Advanced Configuration",
-  "appData": "App Data",
-  "appLogs": "App Logs",
-  "localAIServiceLogs": "Local AI Service Logs",
+  "version": "버전",
+  "moreOptions": "더 많은 옵션",
+  "path": "경로",
+  "discardChanges": "변경 사항 취소",
+  "checkForUpdates": "업데이트 확인",
+  "uninstall": "{item} 제거",
+  "invalidJSON": "유효하지 않은 JSON",
+  "reset": "{item} 초기화",
+  "save": "{item} 저장",
+  "eg": "예: {item}",
+  "advancedConfiguration": "고급 설정",
+  "appData": "앱 데이터",
+  "appLogs": "앱 로그",
+  "localAIServiceLogs": "로컬 AI 서비스 로그",
   "mac": {
-    "locateInFolder": "Reveal in Finder"
+    "locateInFolder": "Finder에서 열기"
   },
   "windows": {
-    "locateInFolder": "Show in File Explorer"
+    "locateInFolder": "파일 탐색기에서 보기"
   },
   "linux": {
-    "locateInFolder": "Locate in File Manager"
+    "locateInFolder": "파일 관리자로 찾기"
   },
   "settings": {
-    "label": "Setting | Settings",
+    "label": "설정",
     "general": {
-      "label": "General",
+      "label": "일반",
       "autoGenerateChatTitle": {
-        "label": "Automatically Generate Chat Title",
-        "description": "When enabled, new chat titles will be generated automatically. For chats using online models, the title will be based on the model used and the first two messages exchanged. For conversations using a local model, title generation is always active and may result in increased token usage."
+        "label": "채팅 제목 자동 생성",
+        "description": "이 기능을 활성화하면 새 채팅 제목이 자동으로 생성됩니다. 온라인 모델을 사용하는 채팅의 경우 사용된 모델과 처음 두 메시지를 기반으로 제목이 생성됩니다. 로컬 모델을 사용하는 경우 제목 생성이 항상 활성화되며 토큰 사용량이 증가할 수 있습니다."
       },
       "enableLinksInChatMessages": {
-        "label": "Enable Links In Chat Messages",
-        "description": "Enable or disable links in chat messages. Disabling this will prevent links from being clickable. We recommend disabling this for security reasons."
+        "label": "채팅 메시지에서 링크 활성화",
+        "description": "채팅 메시지에서 링크를 활성화하거나 비활성화합니다. 비활성화하면 링크를 클릭할 수 없게 됩니다. 보안상의 이유로 이 기능을 비활성화하는 것을 권장합니다."
       },
       "theme": {
-        "label": "Theme",
+        "label": "테마",
         "appearance": {
-          "label": "Appearance",
-          "light": "Light",
-          "dark": "Dark",
-          "system": "System"
+          "label": "외형",
+          "light": "라이트",
+          "dark": "다크",
+          "system": "시스템"
         },
         "accentColor": {
-          "label": "Accent Color"
+          "label": "포인트 컬러"
         },
         "fontStyle": {
-          "label": "Font Style"
+          "label": "글꼴 스타일"
         },
         "codeTheme": {
-          "label": "Code Theme"
+          "label": "코드 테마"
         },
-        "fontSize": "Font Size",
-        "themeTray": "Theme Tray",
-        "toggleThemeTray": "Toggle Theme Tray"
+        "fontSize": "글꼴 크기",
+        "themeTray": "테마 트레이",
+        "toggleThemeTray": "테마 트레이 토글"
       },
       "applicationInfo": {
-        "label": "Application Info",
+        "label": "애플리케이션 정보",
         "appVersion": {
-          "label": "App Version",
+          "label": "앱 버전",
           "description": {
-            "manual": "The latest updates are checked periodically and you will be notified when a new update is available. You can manually check for updates.",
-            "automatic": "The latest updates are checked periodically and installed automatically. You can also manually check for updates."
+            "manual": "최신 업데이트를 정기적으로 확인하며 새 업데이트가 있을 경우 알림을 받습니다. 수동으로 업데이트를 확인할 수도 있습니다.",
+            "automatic": "최신 업데이트가 정기적으로 확인되고 자동으로 설치됩니다. 수동으로 업데이트를 확인할 수도 있습니다."
           },
-          "viewChangelog": "View Changelog",
-          "enableAutoUpdates": "Enable Auto Updates"
+          "viewChangelog": "변경 로그 보기",
+          "enableAutoUpdates": "자동 업데이트 활성화"
         },
         "modelsInfo": {
-          "label": "Models Info",
-          "description": "Update your local model metadata. This information includes details about each model, but not the model files themselves. This applies to both locally stored and online models",
+          "label": "모델 정보",
+          "description": "로컬 모델 메타데이터를 업데이트합니다. 이 정보에는 각 모델에 대한 세부 사항이 포함되지만 모델 파일 자체는 포함되지 않습니다. 이는 로컬 저장 모델과 온라인 모델 모두에 적용됩니다.",
           "fetchLatestModelsInfo": {
-            "label": "Fetch Latest Models Info"
+            "label": "최신 모델 정보 가져오기"
           }
         },
         "appSettings": {
-          "label": "App Settings",
-          "description": "Resetting app settings to their defaults can help resolve potential issues. This will restore the default user preferences, such as appearance and models path, but will not delete any data, including chats or downloaded/imported models.",
+          "label": "앱 설정",
+          "description": "앱 설정을 기본값으로 재설정하면 잠재적인 문제를 해결할 수 있습니다. 이 작업은 사용자 기본 설정(예: 외형 및 모델 경로)을 복원하지만 채팅이나 다운로드/가져온 모델 등의 데이터는 삭제되지 않습니다.",
           "resetAppSettings": {
-            "label": "Reset App Settings",
-            "success": "App settings were reset"
+            "label": "앱 설정 초기화",
+            "success": "앱 설정이 초기화되었습니다."
           }
         },
         "dataPaths": {
-          "label": "Data Paths",
-          "description": "All data, including models, conversations, settings, and logs, are stored locally on your device. Only modify the contents of these directories if you are familiar with the application's file structure",
-          "activeWorkspace": "Active Workspace"
+          "label": "데이터 경로",
+          "description": "모든 데이터(모델, 대화, 설정 및 로그 포함)는 사용자의 장치에 로컬로 저장됩니다. 애플리케이션 파일 구조에 익숙한 경우에만 이러한 디렉토리 내용을 수정하십시오.",
+          "activeWorkspace": "활성 작업 공간"
         },
         "helpAndDiscussions": {
-          "label": "Help & Discussions",
-          "description": "Connect with our community on Discord to get support, share your feedback, and stay informed",
-          "sayHi": "Say Hi!",
-          "viewDocs": "View Docs"
+          "label": "도움말 및 토론",
+          "description": "피드백을 공유하며 최신 정보를 얻기 위해 Discord 커뮤니티에 참여하세요.",
+          "sayHi": "대화 시작",
+          "viewDocs": "문서 보기"
         }
       }
     },
     "localAI": {
-      "label": "Local AI Settings",
-      "manageLocalAIModels": "Manage Local AI Models",
+      "label": "로컬 AI 설정",
+      "manageLocalAIModels": "로컬 AI 모델 관리",
       "localAIService": {
-        "label": "Local AI Service",
-        "saveAndRestartService": "Save and Restart Service",
-        "restartingService": "Restarting Local AI Service",
+        "label": "로컬 AI 서비스",
+        "saveAndRestartService": "저장 및 서비스 재시작",
+        "restartingService": "로컬 AI 서비스 재시작 중",
         "modelsDirectory": {
-          "label": "Models Directory",
-          "description": "Directory for storing local LLMs.",
+          "label": "모델 디렉토리",
+          "description": "로컬 LLM을 저장하는 디렉토리입니다.",
           "editModelsPath": {
-            "label": "Edit Models Path",
-            "description": "Set your desired location for downloading the models.",
-            "willRestartLocalAIWarning": " Note: Changing the models path will restart the Local AI service for the changes to take effect.",
-            "selectModelsPath": "Select Models Path",
-            "success": "Models path saved"
+            "label": "모델 경로 수정",
+            "description": "모델을 다운로드할 원하는 위치를 설정하십시오.",
+            "willRestartLocalAIWarning": "참고: 모델 경로를 변경하면 변경 사항을 적용하기 위해 로컬 AI 서비스가 재시작됩니다.",
+            "selectModelsPath": "모델 경로 선택",
+            "success": "모델 경로가 저장되었습니다."
           }
         },
         "serviceHealth": {
-          "label": "Service Health",
-          "description": "Current Local AI service status. If you are experiencing issues with Local AI, please try restarting the service.",
+          "label": "서비스 상태",
+          "description": "현재 로컬 AI 서비스 상태입니다. 로컬 AI에서 문제가 발생하면 서비스를 다시 시작해 보세요.",
           "healthStatus": {
-            "starting": "Starting",
-            "running": "Running",
-            "stopped": "Stopped",
-            "unknown": "Unknown"
+            "starting": "시작 중",
+            "running": "실행 중",
+            "stopped": "중지됨",
+            "unknown": "알 수 없음"
           },
-          "startService": "Start Service",
-          "restartService": "Restart Service",
-          "stopService": "Stop Service"
+          "startService": "서비스 시작",
+          "restartService": "서비스 재시작",
+          "stopService": "서비스 중지"
         },
         "serviceEndpoint": {
-          "label": "Service Endpoint",
+          "label": "서비스 엔드포인트",
           "description": {
-            "base": "The address of the Local AI service to connect from other applications.",
-            "serviceIsNotRunning": "Once the service is running, the address will be displayed here.",
-            "serviceIsAvailableOnNetwork": "Because the service is available on the network, you can also connect to it using the Network Service URL from other devices."
+            "base": "다른 애플리케이션에서 연결하기 위한 로컬 AI 서비스 주소입니다.",
+            "serviceIsNotRunning": "서비스가 실행되면 주소가 여기에 표시됩니다.",
+            "serviceIsAvailableOnNetwork": "서비스가 네트워크에서 사용 가능하므로 다른 장치에서도 네트워크 서비스 URL을 사용해 연결할 수 있습니다."
           },
-          "localURL": "Local URL",
-          "copyLocalURL": "Copy Service Local URL to clipboard",
-          "networkURL": "Network URL",
-          "copyNetworkURL": "Copy Service Network URL to clipboard",
+          "localURL": "로컬 URL",
+          "copyLocalURL": "서비스 로컬 URL을 클립보드에 복사",
+          "networkURL": "네트워크 URL",
+          "copyNetworkURL": "서비스 네트워크 URL을 클립보드에 복사",
           "editPortNumber": {
-            "label": "Edit Port Number",
-            "success": "Local AI Service port number saved",
-            "failure": "Could not save Local AI Service port number"
+            "label": "포트 번호 수정",
+            "success": "로컬 AI 서비스 포트 번호가 저장되었습니다.",
+            "failure": "로컬 AI 서비스 포트 번호를 저장할 수 없습니다."
           }
         },
         "serviceVersion": {
-          "label": "Service Version",
+          "label": "서비스 버전",
           "description": {
-            "base": "The version of the Local AI service.",
-            "mac": "You can check and update to the latest version or uninstall the service completely."
+            "base": "로컬 AI 서비스의 버전입니다.",
+            "mac": "최신 버전으로 업데이트하거나 서비스를 완전히 제거할 수 있습니다."
           },
-          "startServiceToCheckVersion": "Start the service to check the version."
+          "startServiceToCheckVersion": "버전을 확인하려면 서비스를 시작하십시오."
         },
         "updateService": {
-          "success": "Local AI Service has been updated to the latest version",
-          "failure": "Failed to update Local AI Service to the latest version"
+          "success": "로컬 AI 서비스가 최신 버전으로 업데이트되었습니다.",
+          "failure": "로컬 AI 서비스를 최신 버전으로 업데이트하지 못했습니다."
         },
         "uninstallService": {
-          "label": "Uninstall Local AI Service?",
-          "description": "Your models are NOT removed and stay where they are. Future chats with the downloaded models will be disabled unless you reinstall the service."
+          "label": "로컬 AI 서비스를 제거하시겠습니까?",
+          "description": "모델은 제거되지 않고 그대로 유지됩니다. 다운로드한 모델과의 미래 채팅은 서비스를 다시 설치하지 않으면 비활성화됩니다."
         }
       },
       "serviceConfigurations": {
-        "label": "Service Configurations",
-        "description": "These configurations get applied to the Local AI service when starting. The Local AI service will automatically restart after you modify and save any of these settings.",
+        "label": "서비스 설정",
+        "description": "이 설정은 로컬 AI 서비스 시작 시 적용됩니다. 설정을 수정하고 저장한 후 로컬 AI 서비스가 자동으로 재시작됩니다.",
         "configurePortNumber": {
-          "label": "Configure Port Number",
-          "description": "Port number on which the Local AI service will run. Leave it empty to use the default port."
+          "label": "포트 번호 설정",
+          "description": "로컬 AI 서비스가 실행될 포트 번호입니다. 기본 포트를 사용하려면 비워 두십시오."
         },
         "maximumParallelChats": {
-          "label": "Maximum Parallel Chats",
-          "description": "Maximum number of concurrent chat sessions (when using split mode)."
+          "label": "최대 동시 채팅 수",
+          "description": "동시 채팅 세션의 최대 수입니다(스플릿 모드 사용 시)."
         },
         "maximumLoadedModels": {
-          "label": "Maximum Loaded Models",
-          "description": "Maximum number of LLMs loaded concurrently. Keeping more LLMs ready in memory enables faster initial responses, but consumes additional system resources."
+          "label": "최대 로드된 모델 수",
+          "description": "동시에 메모리에 로드되는 LLM의 최대 수입니다. 더 많은 LLM을 메모리에 준비해두면 초기 응답 속도가 빨라지지만 시스템 리소스를 추가로 소비합니다."
         },
         "enableNetworkAccess": {
-          "label": "Enable Network Access",
-          "description": "Allow other devices on your network to access this Local AI service via this device’s IP address."
+          "label": "네트워크 액세스 활성화",
+          "description": "네트워크의 다른 장치에서 이 로컬 AI 서비스에 이 장치의 IP 주소를 통해 액세스할 수 있도록 허용합니다."
         },
         "allowedNetworkOrigins": {
-          "label": "Allowed Network Origins",
-          "description": "List permitted network origins here (comma-separated). Each entry must begin with http:// or https://. Use * to permit all origins."
+          "label": "허용된 네트워크 원본",
+          "description": "허용된 네트워크 원본을 여기에 나열하십시오(쉼표로 구분). 각 항목은 http:// 또는 https://로 시작해야 합니다. 모든 원본을 허용하려면 *을 사용하십시오."
         },
         "captureServiceLogs": {
-          "label": "Capture Service Logs",
-          "description": "Capture service logs for debugging purposes. We recommend enabling this only when necessary."
+          "label": "서비스 로그 캡처",
+          "description": "디버깅 목적으로 서비스 로그를 캡처합니다. 필요한 경우에만 이 기능을 활성화하는 것을 권장합니다."
         },
         "advancedConfiguration": {
-          "description": "Enter valid JSON to set environment variables for the Local AI service."
+          "description": "로컬 AI 서비스에 환경 변수를 설정하려면 유효한 JSON을 입력하십시오."
         },
         "save": {
-          "success": "Service configurations saved",
-          "failure": "Failed to save service configurations"
+          "success": "서비스 설정이 저장되었습니다.",
+          "failure": "서비스 설정을 저장하지 못했습니다."
         },
         "reset": {
-          "success": "Service configurations reset to original values",
-          "failure": "Failed to reset service configurations"
+          "success": "서비스 설정이 원래 값으로 재설정되었습니다.",
+          "failure": "서비스 설정을 재설정하지 못했습니다."
         }
       },
       "chatModelConfiguration": {
-        "label": "Chat Model Configuration",
-        "description": "These settings apply to all installed models during chat sessions.",
+        "label": "채팅 모델 설정",
+        "description": "이 설정은 채팅 세션 중 설치된 모든 모델에 적용됩니다.",
         "modelKeepAliveTimeout": {
-          "label": "Model Keep-Alive Timeout",
-          "description": "Time (in minutes) to keep a model loaded in memory after use."
+          "label": "모델 유지 시간 초과",
+          "description": "사용 후 모델을 메모리에 유지하는 시간(분 단위)입니다."
         },
         "advancedConfiguration": {
-          "description": "Enter valid JSON to pass extra parameters to models during chat sessions."
+          "description": "채팅 세션 중 모델에 추가 매개변수를 전달하려면 유효한 JSON을 입력하십시오."
         },
         "save": {
-          "success": "Configuration saved and will be applied during chatting",
-          "failure": "Failed to save model configuration"
+          "success": "설정이 저장되었으며 채팅 중에 적용됩니다.",
+          "failure": "모델 설정을 저장하지 못했습니다."
         },
         "reset": {
-          "success": "Chat model configuration reset to original values",
-          "failure": "Failed to reset chat model configuration"
+          "success": "채팅 모델 설정이 원래 값으로 재설정되었습니다.",
+          "failure": "채팅 모델 설정을 재설정하지 못했습니다."
         }
       }
     }
