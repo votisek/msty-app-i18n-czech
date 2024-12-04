@@ -1,0 +1,222 @@
+{
+    "version": "Version",
+    "moreOptions": "Mehr Optionen",
+    "path": "Pfad",
+    "discardChanges": "Änderungen verwerfen",
+    "checkForUpdates": "Nach Updates suchen",
+    "uninstall": "Deinstalliere {item}",
+    "invalidJSON": "Ungültige JSON",
+    "reset": "Setze {item} zurück",
+    "save": "Speicher {item}",
+    "eg": "bsp. {item}",
+    "advancedConfiguration": "Erweiterte Konfiguration",
+    "appData": "App Daten",
+    "appLogs": "App Logs",
+    "localAIServiceLogs": "Lokale AI Service Logs",
+    "mac": {
+        "locateInFolder": "Im Finder anzeigen"
+    },
+    "windows": {
+        "locateInFolder": "Im File Explorer anzeigen"
+    },
+    "linux": {
+        "locateInFolder": "Im File Manager anzeigen"
+    },
+    "settings": {
+        "label": "Einstellung | Einstellungen",
+        "general": {
+            "label": "Allgemein",
+            "autoGenerateChatTitle": {
+                "label": "Automatisch generierten Chat-Titel aktivieren",
+                "description": "Wenn aktiviert, werden neue Chat-Titel automatisch generiert. Bei Chats mit Online Modellen basiert der Titel auf dem verwendeten Modell und den ersten beiden ausgetauschten Nachrichten. Bei Unterhaltungen mit einem lokalen Modell ist die Titelgenerierung immer aktiv und kann zu einem erhöhten Token Verbrauch führen."
+            },
+            "enableLinksInChatMessages": {
+                "label": "Links in Chat-Nachrichten aktivieren",
+                "description": "Aktivieren oder deaktivieren Sie Links in Chat-Nachrichten. Wenn Sie dies deaktivieren, können Links nicht angeklickt werden. Wir empfehlen, dies aus Sicherheitsgründen zu deaktivieren."
+            },
+            "theme": {
+                "label": "Thema",
+                "appearance": {
+                    "label": "Aussehen",
+                    "light": "Light",
+                    "dark": "Dark",
+                    "system": "System"
+                },
+                "accentColor": {
+                    "label": "Akzentfarbe"
+                },
+                "fontStyle": {
+                    "label": "Schriftstil"
+                },
+                "codeTheme": {
+                    "label": "Code Thema"
+                },
+                "fontSize": "Schritgröße",
+                "themeTray": "Themenleiste",
+                "toggleThemeTray": "Themenleiste umschalten"
+            },
+            "applicationInfo": {
+                "label": "Anwendungsinfo",
+                "appVersion": {
+                    "label": "App Version",
+                    "description": {
+                        "manual": "Die neuesten Updates werden regelmäßig überprüft und Sie werden benachrichtigt, wenn ein neues Update verfügbar ist. Sie können auch manuell nach Updates suchen.",
+                        "automatic": "Die neuesten Updates werden regelmäßig überprüft und automatisch installiert. Sie können auch manuell nach Updates suchen."
+                    },
+                    "viewChangelog": "Zeige Changelog",
+                    "enableAutoUpdates": "Automatische Updates aktivieren"
+                },
+                "modelsInfo": {
+                    "label": "Modelle Info",
+                    "description": "Aktualisieren Sie Ihre lokalen Modellmetadaten. Diese Informationen enthalten Details zu jedem Modell, jedoch nicht die Modelldateien selbst. Dies gilt sowohl für lokal gespeicherte als auch für Online-Modelle.",
+                    "fetchLatestModelsInfo": {
+                        "label": "Aktualisiere Modelle Info"
+                    }
+                },
+                "appSettings": {
+                    "label": "App Einstellungen",
+                    "description": "Das Zurücksetzen der App-Einstellungen auf die Standardeinstellungen kann dazu beitragen, potenzielle Probleme zu lösen. Dadurch werden die Standardbenutzereinstellungen wiederhergestellt, z. B. Aussehen und Modellepfad, aber es werden keine Daten gelöscht, einschließlich Chats oder heruntergeladener/importierter Modelle.",
+                    "resetAppSettings": {
+                        "label": "App-Einstellungen zurücksetzen",
+                        "success": "App-Einstellungen wurden zurückgesetzt"
+                    }
+                },
+                "dataPaths": {
+                    "label": "Datenpfade",
+                    "description": "Alle Daten, einschließlich Modelle, Unterhaltungen, Einstellungen und Protokolle, werden lokal auf Ihrem Gerät gespeichert. Ändern Sie den Inhalt dieser Verzeichnisse nur, wenn Sie mit der Dateistruktur der Anwendung vertraut sind",
+                    "activeWorkspace": "Aktiver Arbeitsbereich"
+                },
+                "helpAndDiscussions": {
+                    "label": "Hilfe & Diskussionen",
+                    "description": "Verbinden Sie sich mit unserer Community auf Discord, um Unterstützung zu erhalten, Ihr Feedback zu teilen und informiert zu bleiben",
+                    "sayHi": "Sag Hallo",
+                    "viewDocs": "Dokumentation anzeigen"
+                }
+            }
+        },
+        "localAI": {
+            "label": "Lokale AI Einstellungen",
+            "manageLocalAIModels": "Lokale KI Modelle verwalten",
+            "localAIService": {
+                "label": "Lokaler AI Service",
+                "saveAndRestartService": "Speichern und Service neu starten",
+                "restartingService": "Neustart des lokalen AI Service",
+                "modelsDirectory": {
+                    "label": "Modelle Verzeichnis",
+                    "description": "Verzeichnis zum Speichern lokaler LLMs.",
+                    "editModelsPath": {
+                        "label": "Modelle Pfad bearbeiten",
+                        "description": "Setzen Sie Ihren gewünschten Speicherort für das Herunterladen der Modelle.",
+                        "willRestartLocalAIWarning": " Hinweis: Das Ändern des Modellepfads führt zum Neustart des Lokalen AI Service, damit die Änderungen wirksam werden.",
+                        "selectModelsPath": "Modelle Pfad auswählen",
+                        "success": "Modelle Pfad gespeichert"
+                    }
+                },
+                "serviceHealth": {
+                    "label": "Service Health",
+                    "description": "Aktueller Status des lokalen AI Service. Wenn Sie Probleme mit der lokallen AI haben, versuchen Sie bitte, den Service neu zu starten.",
+                    "healthStatus": {
+                        "starting": "Starten",
+                        "running": "Läuft",
+                        "stopped": "Gestoppt",
+                        "unknown": "Unbekannt"
+                    },
+                    "startService": "Starte Service",
+                    "restartService": "Service neu starten",
+                    "stopService": "Stoppe Service"
+                },
+                "serviceEndpoint": {
+                    "label": "Service Endpunkt",
+                    "description": {
+                        "base": "Die Adresse des lokalen AI Service, um sich von anderen Anwendungen aus zu verbinden.",
+                        "serviceIsNotRunning": "Sobald der Service läuft, wird die Adresse hier angezeigt.",
+                        "serviceIsAvailableOnNetwork": "Da der Service im Netzwerk verfügbar ist, können Sie sich auch von anderen Geräten aus mit der Netzwerk Service URL verbinden."
+                    },
+                    "localURL": "Lokale URL",
+                    "copyLocalURL": "Kopiere Service lokale URL in die Zwischenablage",
+                    "networkURL": "Netzwerk URL",
+                    "copyNetworkURL": "Kopiere Service Netzwerk URL in die Zwischenablage",
+                    "editPortNumber": {
+                        "label": "Portnummer bearbeiten",
+                        "success": "Lokale AI Service Portnummer gespeichert",
+                        "failure": "Lokale AI Service Portnummer konnte nicht gespeichert werden"
+                    }
+                },
+                "serviceVersion": {
+                    "label": "Service Version",
+                    "description": {
+                        "base": "Die Version des lokalen AI Service.",
+                        "mac": "Sie können die Version überprüfen und auf die neueste Version aktualisieren oder den Service vollständig deinstallieren."
+                    },
+                    "startServiceToCheckVersion": "Starten Sie den Service, um die Version zu überprüfen."
+                },
+                "updateService": {
+                    "success": "Lokaler AI Service wurde auf die neueste Version aktualisiert",
+                    "failure": "Fehler beim Aktualisieren des lokalen AI Service auf die neueste Version"
+                },
+                "uninstallService": {
+                    "label": "Lokalen AI Service deinstallieren?",
+                    "description": "Ihre Modelle werden NICHT entfernt und bleiben dort, wo sie sind. Zukünftige Chats mit den heruntergeladenen Modellen werden deaktiviert, es sei denn, Sie installieren den Service erneut."
+                }
+            },
+            "serviceConfigurations": {
+                "label": "Service Konfigurationen",
+                "description": "Diese Konfigurationen werden auf den lokalen AI Service angewendet, wenn er gestartet wird. Der lokale AI Service wird automatisch neu gestartet, nachdem Sie eine dieser Einstellungen geändert und gespeichert haben.",
+                "configurePortNumber": {
+                    "label": "Konfigurieren Sie die Portnummer",
+                    "description": "Portnummer, auf der der Lokale AI Service ausgeführt wird. Lassen Sie es leer, um den Standardport zu verwenden."
+                },
+                "maximumParallelChats": {
+                    "label": "Maximale parallele Chats",
+                    "description": "Maximale Anzahl von parallelen Chat-Sitzungen (bei Verwendung des Split-Modus)."
+                },
+                "maximumLoadedModels": {
+                    "label": "Maximale geladene Modelle",
+                    "description": "Maximale Anzahl von gleichzeitig geladenen LLMs. Das Bereithalten von mehr LLMs im Speicher ermöglicht schnellere anfängliche Antworten, verbraucht jedoch zusätzliche Systemressourcen."
+                },
+                "enableNetworkAccess": {
+                    "label": "Netzwerkzugriff aktivieren",
+                    "description": "Erlauben Sie anderen Geräten in Ihrem Netzwerk, auf diesen Lokalen AI Service über die IP-Adresse dieses Geräts zuzugreifen."
+                },
+                "allowedNetworkOrigins": {
+                    "label": "Erlaubte Netzwerk Ursprünge",
+                    "description": "Liste der hier erlaubten Netzwerkursprünge (durch Kommas getrennt). Jeder Eintrag muss mit http:// oder https:// beginnen. Verwenden Sie * um alle Ursprünge zu erlauben."
+                },
+                "captureServiceLogs": {
+                    "label": "Erfasse Service Logs",
+                    "description": "Erfassen Sie Service-Logs zu Debugging-Zwecken. Wir empfehlen, dies nur bei Bedarf zu aktivieren."
+                },
+                "advancedConfiguration": {
+                    "description": "Geben Sie gültiges JSON ein, um Umgebungsvariablen für den Lokalen AI Service festzulegen."
+                },
+                "save": {
+                    "success": "Service Konfigurationen gespeichert",
+                    "failure": "Fehler beim Speichern der Service Konfigurationen"
+                },
+                "reset": {
+                    "success": "Service Konfigurationen auf die ursprünglichen Werte zurückgesetzt",
+                    "failure": "Fehler beim Zurücksetzen der Service Konfigurationen"
+                }
+            },
+            "chatModelConfiguration": {
+                "label": "Chat Model Konfiguration",
+                "description": "Diese Einstellungen gelten für alle installierten Modelle während der Chat-Sitzungen.",
+                "modelKeepAliveTimeout": {
+                    "label": "Modell Keep-Alive Zeitlimit",
+                    "description": "Zeit (in Minuten), um ein Modell in Memory zu behalten, nachdem es verwendet wurde."
+                },
+                "advancedConfiguration": {
+                    "description": "Geben Sie gültiges JSON ein, um zusätzliche Parameter an Modelle während der Chat-Sitzungen zu übergeben."
+                },
+                "save": {
+                    "success": "Konfiguration gespeichert und wird während des Chats angewendet",
+                    "failure": "Fehler beim Speichern der Konfiguration"
+                },
+                "reset": {
+                    "success": "Chat Modellkonfiguration auf die ursprünglichen Werte zurückgesetzt",
+                    "failure": "Fehler beim Zurücksetzen der Chat Modellkonfiguration"
+                }
+            }
+        }
+    }
+}
