@@ -13,6 +13,29 @@
   "appData": "App Data",
   "appLogs": "App Logs",
   "localAIServiceLogs": "Local AI Service Logs",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "new": "New {item}",
+  "add": "Add {item}",
+  "edit": "Edit {item}",
+  "select": "Select {item}",
+  "update": "Update {item}",
+  "fetch": "Fetch {item}",
+  "refetch": "Re-fetch {item}",
+  "filter": "Filter {item}",
+  "search": "Search {item}",
+  "provider": "Provider",
+  "apiKey": "API Key",
+  "learnMore": "Learn more.",
+  "aurumPerk": "Aurum Perk",
+  "name": "Name",
+  "model": "Model | Models",
+  "modelId": "Model ID",
+  "toggle": "Toggle {item}",
+  "loading": "Loading {item}...",
+  "license": "License",
+  "activate": "Activate {item}",
+  "apiVersion": "API Version",
   "mac": {
     "locateInFolder": "Reveal in Finder"
   },
@@ -24,8 +47,13 @@
   },
   "settings": {
     "label": "Setting | Settings",
+    "description": "Edit Msty's Settings",
     "general": {
       "label": "General",
+      "language": {
+        "label": "Language",
+        "description": "Select your preferred language for Msty. If your desired language is unavailable, you can contribute translations through our i18n repository."
+      },
       "autoGenerateChatTitle": {
         "label": "Automatically Generate Chat Title",
         "description": "When enabled, new chat titles will be generated automatically. For chats using online models, the title will be based on the model used and the first two messages exchanged. For conversations using a local model, title generation is always active and may result in increased token usage."
@@ -91,11 +119,24 @@
           "description": "Connect with our community on Discord to get support, share your feedback, and stay informed",
           "sayHi": "Say Hi!",
           "viewDocs": "View Docs"
+        },
+        "networkProxyConfiguration": {
+          "label": "Network Proxy Configuration",
+          "proxyAddress": {
+            "label": "Proxy Address",
+            "description": "Specify proxy address to route network traffic. If no address is provided, Msty will auto-detect your device's network proxy address. If configuration is reset, you need to quit and restart Msty."
+          },
+          "reset": {
+            "success": "Proxy configuration reset"
+          },
+          "save": {
+            "success": "Proxy configured"
+          }
         }
       }
     },
     "localAI": {
-      "label": "Local AI Settings",
+      "label": "Local AI",
       "manageLocalAIModels": "Manage Local AI Models",
       "localAIService": {
         "label": "Local AI Service",
@@ -217,6 +258,109 @@
           "failure": "Failed to reset chat model configuration"
         }
       }
+    },
+    "remoteModelProviders": {
+      "label": "Remote Model Provider | Remote Model Providers",
+      "noModels": {
+        "label": "No AI Model Providers Added Yet",
+        "description": "Get started by adding a new provider such as Open AI, Mistral, Google Gemini, Perplexity, Open AI compatible endpoints, remote Ollama, remote Msty, etc."
+      },
+      "selectModels": "Select Models",
+      "filterAvailableModels": "Search Models",
+      "description": {
+        "whereToGetKey": "You can get the key from your API provider's website.",
+        "whereItsStored": "By default, we save your API keys securely and locally in your operating system's keychain. You might be asked for your credentials when saving and retrieving the key.",
+        "linuxKeyringConfiguration": "There is a known issue on Linux where, if you have misconfigured your keyring, you might not be able to save your API key. Please make sure your keyring is properly configured. You can also try saving the key not in the keyring but in the app's database. This is less secure but might work.",
+        "keyHintInfo": "{keyHint} is just a hint. The actual key is saved securely in your operating system's keychain unless you choose to opt-out of using keychain. If you want to update the key, just provide a new key and click on the Update button.",
+        "ifOllamaOrMstyRemote": "To be able to try fetching models automatically, you need to provide the API key again."
+      },
+      "addItem": {
+        "success": "Added model provider {providerName}"
+      },
+      "updateItem": {
+        "success": "Updated model provider {providerName}"
+      },
+      "deleteItem": {
+        "label": "Delete model provider {providerName}?",
+        "description": "This will only delete the model provider key and associated models. Previous chats with models from this provider will NOT be deleted.",
+        "success": "Deleted model provider {providerName}"
+      },
+      "namePlaceholder": "e.g., My {providerName} models",
+      "saveInKeychain": "Save key securely in keychain",
+      "apiEndpoint": "API Endpoint",
+      "serviceEndpoint": "Service Endpoint",
+      "fetchModels": {
+        "label": "Fetch Models",
+        "refetchModels": "Re-fetch Models",
+        "description": "Provide a valid endpoint and press Fetch Models to retrieve available models",
+        "noModelsAvailable": "No models available",
+        "error": "Could not fetch available models. Is the service endpoint correct?",
+        "info": "Attempting to fetch available models at {endpoint}"
+      },
+      "openAICompatibleUrlInfo": "Make sure to include http:// or https://",
+      "customModels": {
+        "label": "Custom Model | Custom Models"
+      },
+      "targetURI": "Target URI",
+      "uriOptions": "URI Options",
+      "instanceName": "Instance Name",
+      "deploymentName": "Deployment Name"
+    },
+    "defaultPrompts": {
+      "label": "Default Prompts",
+      "placeholder": "Select a prompt type...",
+      "defaultModelPrompt": {
+        "label": "Default Model Prompt",
+        "placeholder": "Click to set the global default model prompt..."
+      },
+      "autoTitleGenerationPrompt": {
+        "label": "Auto Title Generation Prompt",
+        "placeholder": "Generate a title..."
+      },
+      "realTimeDataSearchQueryPrompt": {
+        "label": "Real-Time Data Search Query Synthesize Prompt",
+        "placeholder": "Synthesize Real Time Data search query..."
+      },
+      "updatePrompt": {
+        "success": "Updated {promptType}"
+      }
+    },
+    "licenseAndAccess": {
+      "label": "License and Access",
+      "enterLicenseKey": "Enter your License key",
+      "aurum": {
+        "label": "Aurum License",
+        "description": "Unlock all the premium features of Msty by activating your Aurum License.",
+        "purchaseLicense": "Purchase License",
+        "activate": {
+          "label": "Activate Aurum License",
+          "success": "Aurum License activated",
+          "failure": "Could not active your Aurum License. Please try again. {errorMessage}"
+        },
+        "activated": {
+          "description": "Thank you for supporting Msty! Your Aurum License is active and you have unlocked all the premium features of Msty."
+        }
+      },
+      "aurumLifetime": {
+        "label": "Aurum Lifetime Access Club",
+        "description": "Join the golden circle of supporters with one time purchase of Aurum Lifetime Access and unlock all the premium features of Msty forever.",
+        "notASubscription": "Note: This is a one-time purchase and not a subscription. Upgrading from Aurum License to Aurum Lifetime Access is not possible.",
+        "join": "Join the Club",
+        "activate": {
+          "label": "Activate Aurum Lifetime License",
+          "success": "Thank you! You are now a star of the Aurum Lifetime Club!",
+          "failure": "Could not activate your Aurum Lifetime License. Please try again. {errorMessage}"
+        },
+        "activated": {
+          "label": "Aurum Lifetime Access 🌟",
+          "description": "You are a star of the Aurum Lifetime Access Club! Thank you for supporting us and welcome to the club!",
+          "additionalNote": "Your support has allowed us to focus on adding new features and improving the app without any external influences. 🙏"
+        }
+      }
     }
+  },
+  "searchModels": {
+    "label": "Search models...",
+    "noModelsFound": "No models found"
   }
 }
