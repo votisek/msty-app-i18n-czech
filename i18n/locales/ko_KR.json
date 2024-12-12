@@ -13,6 +13,29 @@
   "appData": "앱 데이터",
   "appLogs": "앱 로그",
   "localAIServiceLogs": "로컬 AI 서비스 로그",
+  "cancel": "취소",
+  "confirm": "확인",
+  "new": "새 {item}",
+  "add": "{item} 추가",
+  "edit": "{item} 편집",
+  "select": "{item} 선택",
+  "update": "{item} 업데이트",
+  "fetch": "{item} 가져오기",
+  "refetch": "{item} 다시 가져오기",
+  "filter": "{item} 필터",
+  "search": "{item} 검색",
+  "provider": "공급자",
+  "apiKey": "API 키",
+  "learnMore": "자세히 알아보기.",
+  "aurumPerk": "Aurum 혜택",
+  "name": "이름",
+  "model": "모델 | 모델들",
+  "modelId": "모델 ID",
+  "toggle": "{item} 전환",
+  "loading": "{item} 로드 중...",
+  "license": "라이선스",
+  "activate": "{item} 활성화",
+  "apiVersion": "API 버전",
   "mac": {
     "locateInFolder": "Finder에서 열기"
   },
@@ -20,19 +43,37 @@
     "locateInFolder": "파일 탐색기에서 보기"
   },
   "linux": {
-    "locateInFolder": "파일 관리자로 찾기"
+    "locateInFolder": "파일 관리자에서 찾기"
   },
   "settings": {
     "label": "설정",
+    "description": "Msty의 설정을 편집",
     "general": {
       "label": "일반",
+      "language": {
+        "label": "언어",
+        "description": "Msty에서 사용할 언어를 선택하세요. 원하는 언어가 없으면 i18n 저장소를 통해 번역에 기여할 수 있습니다."
+      },
       "autoGenerateChatTitle": {
         "label": "채팅 제목 자동 생성",
-        "description": "이 기능을 활성화하면 새 채팅 제목이 자동으로 생성됩니다. 온라인 모델을 사용하는 채팅의 경우 사용된 모델과 처음 두 메시지를 기반으로 제목이 생성됩니다. 로컬 모델을 사용하는 경우 제목 생성이 항상 활성화되며 토큰 사용량이 증가할 수 있습니다."
+        "description": "이 기능을 활성화하면 새로운 채팅 제목이 자동으로 생성됩니다. 온라인 모델을 사용하는 경우, 모델과 처음 두 메시지를 기반으로 제목이 생성됩니다. 로컬 모델을 사용하는 경우 제목 생성이 항상 활성화되며 토큰 사용량이 증가할 수 있습니다."
       },
       "enableLinksInChatMessages": {
         "label": "채팅 메시지에서 링크 활성화",
-        "description": "채팅 메시지에서 링크를 활성화하거나 비활성화합니다. 비활성화하면 링크를 클릭할 수 없게 됩니다. 보안상의 이유로 이 기능을 비활성화하는 것을 권장합니다."
+        "description": "채팅 메시지에서 링크를 활성화하거나 비활성화합니다. 비활성화하면 링크를 클릭할 수 없습니다. 보안상의 이유로 이 기능을 비활성화하는 것을 권장합니다."
+      },
+      "networkProxyConfiguration": {
+        "label": "네트워크 프록시 설정",
+        "proxyAddress": {
+          "label": "프록시 주소",
+          "description": "네트워크 트래픽을 라우팅할 프록시 주소를 지정하십시오. 주소가 제공되지 않으면 Msty가 장치의 네트워크 프록시 주소를 자동으로 감지합니다. 설정이 재설정되면 Msty를 종료하고 다시 시작해야 합니다."
+        },
+        "reset": {
+          "success": "프록시 설정이 재설정되었습니다."
+        },
+        "save": {
+          "success": "프록시가 구성되었습니다."
+        }
       },
       "theme": {
         "label": "테마",
@@ -43,7 +84,7 @@
           "system": "시스템"
         },
         "accentColor": {
-          "label": "포인트 컬러"
+          "label": "강조 색상"
         },
         "fontStyle": {
           "label": "글꼴 스타일"
@@ -53,29 +94,29 @@
         },
         "fontSize": "글꼴 크기",
         "themeTray": "테마 트레이",
-        "toggleThemeTray": "테마 트레이 토글"
+        "toggleThemeTray": "테마 트레이 전환"
       },
       "applicationInfo": {
         "label": "애플리케이션 정보",
         "appVersion": {
           "label": "앱 버전",
           "description": {
-            "manual": "최신 업데이트를 정기적으로 확인하며 새 업데이트가 있을 경우 알림을 받습니다. 수동으로 업데이트를 확인할 수도 있습니다.",
-            "automatic": "최신 업데이트가 정기적으로 확인되고 자동으로 설치됩니다. 수동으로 업데이트를 확인할 수도 있습니다."
+            "manual": "최신 업데이트를 주기적으로 확인하며, 새 업데이트가 있으면 알림을 받습니다. 수동으로 업데이트를 확인할 수도 있습니다.",
+            "automatic": "최신 업데이트를 주기적으로 확인하고 자동으로 설치합니다. 수동으로 업데이트를 확인할 수도 있습니다."
           },
           "viewChangelog": "변경 로그 보기",
           "enableAutoUpdates": "자동 업데이트 활성화"
         },
         "modelsInfo": {
           "label": "모델 정보",
-          "description": "로컬 모델 메타데이터를 업데이트합니다. 이 정보에는 각 모델에 대한 세부 사항이 포함되지만 모델 파일 자체는 포함되지 않습니다. 이는 로컬 저장 모델과 온라인 모델 모두에 적용됩니다.",
+          "description": "로컬 모델 메타데이터를 업데이트합니다. 이 정보는 각 모델의 세부 정보를 포함하며, 로컬 저장 모델과 온라인 모델 모두에 적용됩니다.",
           "fetchLatestModelsInfo": {
             "label": "최신 모델 정보 가져오기"
           }
         },
         "appSettings": {
           "label": "앱 설정",
-          "description": "앱 설정을 기본값으로 재설정하면 잠재적인 문제를 해결할 수 있습니다. 이 작업은 사용자 기본 설정(예: 외형 및 모델 경로)을 복원하지만 채팅이나 다운로드/가져온 모델 등의 데이터는 삭제되지 않습니다.",
+          "description": "앱 설정을 기본값으로 복원하면 잠재적인 문제를 해결할 수 있습니다. 이는 외형, 모델 경로와 같은 기본 사용자 설정을 복원하지만, 채팅이나 다운로드/가져온 모델 등 데이터는 삭제되지 않습니다.",
           "resetAppSettings": {
             "label": "앱 설정 초기화",
             "success": "앱 설정이 초기화되었습니다."
@@ -83,27 +124,27 @@
         },
         "dataPaths": {
           "label": "데이터 경로",
-          "description": "모든 데이터(모델, 대화, 설정 및 로그 포함)는 사용자의 장치에 로컬로 저장됩니다. 애플리케이션 파일 구조에 익숙한 경우에만 이러한 디렉토리 내용을 수정하십시오.",
+          "description": "모델, 대화, 설정, 로그를 포함한 모든 데이터는 사용자의 장치에 로컬로 저장됩니다. 애플리케이션의 파일 구조에 익숙한 경우에만 이러한 디렉터리 내용을 수정하십시오.",
           "activeWorkspace": "활성 작업 공간"
         },
         "helpAndDiscussions": {
           "label": "도움말 및 토론",
-          "description": "피드백을 공유하며 최신 정보를 얻기 위해 Discord 커뮤니티에 참여하세요.",
-          "sayHi": "대화 시작",
+          "description": "Discord 커뮤니티에 참여하여 지원을 받고, 피드백을 공유하며 최신 정보를 확인하세요.",
+          "sayHi": "안녕하세요!",
           "viewDocs": "문서 보기"
         }
       }
     },
     "localAI": {
-      "label": "로컬 AI 설정",
+      "label": "로컬 AI",
       "manageLocalAIModels": "로컬 AI 모델 관리",
       "localAIService": {
         "label": "로컬 AI 서비스",
-        "saveAndRestartService": "저장 및 서비스 재시작",
+        "saveAndRestartService": "저장하고 서비스 재시작",
         "restartingService": "로컬 AI 서비스 재시작 중",
         "modelsDirectory": {
-          "label": "모델 디렉토리",
-          "description": "로컬 LLM을 저장하는 디렉토리입니다.",
+          "label": "모델 디렉터리",
+          "description": "로컬 LLM을 저장하는 디렉터리입니다.",
           "editModelsPath": {
             "label": "모델 경로 수정",
             "description": "모델을 다운로드할 원하는 위치를 설정하십시오.",
@@ -139,7 +180,7 @@
           "editPortNumber": {
             "label": "포트 번호 수정",
             "success": "로컬 AI 서비스 포트 번호가 저장되었습니다.",
-            "failure": "로컬 AI 서비스 포트 번호를 저장할 수 없습니다."
+            "failure": "로컬 AI 서비스 포트 번호를 저장하지 못했습니다."
           }
         },
         "serviceVersion": {
@@ -168,11 +209,11 @@
         },
         "maximumParallelChats": {
           "label": "최대 동시 채팅 수",
-          "description": "동시 채팅 세션의 최대 수입니다(스플릿 모드 사용 시)."
+          "description": "동시에 실행 가능한 채팅 세션의 최대 수입니다(스플릿 모드 사용 시)."
         },
         "maximumLoadedModels": {
           "label": "최대 로드된 모델 수",
-          "description": "동시에 메모리에 로드되는 LLM의 최대 수입니다. 더 많은 LLM을 메모리에 준비해두면 초기 응답 속도가 빨라지지만 시스템 리소스를 추가로 소비합니다."
+          "description": "동시에 메모리에 로드되는 LLM의 최대 수입니다. 더 많은 모델을 메모리에 준비하면 초기 응답 속도가 빨라지지만 시스템 리소스를 추가로 소모합니다."
         },
         "enableNetworkAccess": {
           "label": "네트워크 액세스 활성화",
@@ -180,21 +221,21 @@
         },
         "allowedNetworkOrigins": {
           "label": "허용된 네트워크 원본",
-          "description": "허용된 네트워크 원본을 여기에 나열하십시오(쉼표로 구분). 각 항목은 http:// 또는 https://로 시작해야 합니다. 모든 원본을 허용하려면 *을 사용하십시오."
+          "description": "허용된 네트워크 원본을 쉼표로 구분하여 나열하세요. 각 항목은 http:// 또는 https://로 시작해야 합니다. 모든 원본을 허용하려면 *을 사용하십시오."
         },
         "captureServiceLogs": {
           "label": "서비스 로그 캡처",
-          "description": "디버깅 목적으로 서비스 로그를 캡처합니다. 필요한 경우에만 이 기능을 활성화하는 것을 권장합니다."
+          "description": "디버깅 목적으로 서비스 로그를 캡처합니다. 필요한 경우에만 이 기능을 활성화하는 것이 좋습니다."
         },
         "advancedConfiguration": {
-          "description": "로컬 AI 서비스에 환경 변수를 설정하려면 유효한 JSON을 입력하십시오."
+          "description": "로컬 AI 서비스에 환경 변수를 설정하려면 유효한 JSON을 입력하세요."
         },
         "save": {
           "success": "서비스 설정이 저장되었습니다.",
           "failure": "서비스 설정을 저장하지 못했습니다."
         },
         "reset": {
-          "success": "서비스 설정이 원래 값으로 재설정되었습니다.",
+          "success": "서비스 설정이 기본값으로 재설정되었습니다.",
           "failure": "서비스 설정을 재설정하지 못했습니다."
         }
       },
@@ -206,17 +247,120 @@
           "description": "사용 후 모델을 메모리에 유지하는 시간(분 단위)입니다."
         },
         "advancedConfiguration": {
-          "description": "채팅 세션 중 모델에 추가 매개변수를 전달하려면 유효한 JSON을 입력하십시오."
+          "description": "채팅 세션 중 모델에 추가 매개변수를 전달하려면 유효한 JSON을 입력하세요."
         },
         "save": {
-          "success": "설정이 저장되었으며 채팅 중에 적용됩니다.",
-          "failure": "모델 설정을 저장하지 못했습니다."
+          "success": "구성이 저장되었으며 채팅 중에 적용됩니다.",
+          "failure": "모델 구성을 저장하지 못했습니다."
         },
         "reset": {
-          "success": "채팅 모델 설정이 원래 값으로 재설정되었습니다.",
+          "success": "채팅 모델 설정이 기본값으로 재설정되었습니다.",
           "failure": "채팅 모델 설정을 재설정하지 못했습니다."
         }
       }
+    },
+    "remoteModelProviders": {
+      "label": "원격 모델 제공자",
+      "noModels": {
+        "label": "추가된 AI 모델 제공자가 없습니다.",
+        "description": "Open AI, Mistral, Google Gemini, Perplexity, Open AI 호환 엔드포인트, Remote Ollama, Remote Msty 등을 추가하여 시작하세요."
+      },
+      "selectModels": "모델 선택",
+      "filterAvailableModels": "모델 검색",
+      "description": {
+        "whereToGetKey": "API 제공자의 웹사이트에서 키를 얻을 수 있습니다.",
+        "whereItsStored": "기본적으로 API 키는 운영 체제의 키체인에 안전하게 로컬로 저장됩니다. 저장하거나 검색할 때 자격 증명이 요청될 수 있습니다.",
+        "linuxKeyringConfiguration": "Linux에서 키체인이 잘못 구성된 경우 API 키를 저장할 수 없을 수도 있습니다. 키체인이 제대로 구성되었는지 확인하세요. 키체인을 사용하지 않고 앱 데이터베이스에 저장할 수도 있지만, 이는 보안이 낮습니다.",
+        "keyHintInfo": "{keyHint}는 힌트일 뿐입니다. 실제 키는 운영 체제의 키체인에 안전하게 저장되며, 키체인을 사용하지 않도록 선택하지 않는 한 사용됩니다. 키를 업데이트하려면 새 키를 제공하고 '업데이트' 버튼을 클릭하세요.",
+        "ifOllamaOrMstyRemote": "모델을 자동으로 가져오려면 API 키를 다시 제공해야 합니다."
+      },
+      "addItem": {
+        "success": "모델 제공자 {providerName}이(가) 추가되었습니다."
+      },
+      "updateItem": {
+        "success": "모델 제공자 {providerName}이(가) 업데이트되었습니다."
+      },
+      "deleteItem": {
+        "label": "모델 제공자 {providerName}을(를) 삭제하시겠습니까?",
+        "description": "이 작업은 모델 제공자 키와 관련된 모델만 삭제합니다. 이전에 모델과의 채팅 기록은 삭제되지 않습니다.",
+        "success": "모델 제공자 {providerName}이(가) 삭제되었습니다."
+      },
+      "namePlaceholder": "예: My {providerName} 모델",
+      "saveInKeychain": "키체인에 키 안전하게 저장",
+      "apiEndpoint": "API 엔드포인트",
+      "serviceEndpoint": "서비스 엔드포인트",
+      "fetchModels": {
+        "label": "모델 가져오기",
+        "refetchModels": "모델 다시 가져오기",
+        "description": "유효한 엔드포인트를 제공하고 '모델 가져오기'를 눌러 사용 가능한 모델을 검색하세요.",
+        "noModelsAvailable": "사용 가능한 모델이 없습니다.",
+        "error": "사용 가능한 모델을 가져올 수 없습니다. 서비스 엔드포인트가 올바른지 확인하세요.",
+        "info": "{endpoint}에서 사용 가능한 모델을 가져오는 중입니다."
+      },
+      "openAICompatibleUrlInfo": "http:// 또는 https://를 반드시 포함하세요.",
+      "customModels": {
+        "label": "사용자 정의 모델"
+      },
+      "targetURI": "대상 URI",
+      "uriOptions": "URI 옵션",
+      "instanceName": "인스턴스 이름",
+      "deploymentName": "배포 이름"
+    },
+    "defaultPrompts": {
+      "label": "기본 프롬프트",
+      "placeholder": "프롬프트 유형 선택...",
+      "defaultModelPrompt": {
+        "label": "기본 모델 프롬프트",
+        "placeholder": "전역 기본 모델 프롬프트를 설정하려면 클릭하세요..."
+      },
+      "autoTitleGenerationPrompt": {
+        "label": "자동 제목 생성 프롬프트",
+        "placeholder": "제목 생성..."
+      },
+      "realTimeDataSearchQueryPrompt": {
+        "label": "실시간 데이터 검색 쿼리 합성 프롬프트",
+        "placeholder": "실시간 데이터 검색 쿼리 합성..."
+      },
+      "updatePrompt": {
+        "success": "{promptType}이(가) 업데이트되었습니다."
+      }
+    },
+    "licenseAndAccess": {
+      "label": "라이선스 및 접근",
+      "enterLicenseKey": "라이선스 키를 입력하세요",
+      "aurum": {
+        "label": "Aurum 라이선스",
+        "description": "Aurum 라이선스를 활성화하여 Msty의 모든 프리미엄 기능을 잠금 해제하세요.",
+        "purchaseLicense": "라이선스 구매",
+        "activate": {
+          "label": "Aurum 라이선스 활성화",
+          "success": "Aurum 라이선스가 활성화되었습니다.",
+          "failure": "Aurum 라이선스를 활성화할 수 없습니다. 다시 시도해 주세요. {errorMessage}"
+        },
+        "activated": {
+          "description": "Msty를 지원해 주셔서 감사합니다! Aurum 라이선스가 활성화되었으며 Msty의 모든 프리미엄 기능을 잠금 해제했습니다."
+        }
+      },
+      "aurumLifetime": {
+        "label": "Aurum Lifetime Access Club",
+        "description": "Aurum Lifetime Access를 한 번 구매하여 Msty의 모든 프리미엄 기능을 영구적으로 잠금 해제하고 서포터의 황금 서클에 합류하세요.",
+        "notASubscription": "참고: 이것은 한 번의 구매이며 구독이 아닙니다. Aurum 라이선스에서 Aurum Lifetime Access로 업그레이드는 불가능합니다.",
+        "join": "클럽 가입",
+        "activate": {
+          "label": "Aurum Lifetime License 활성화",
+          "success": "감사합니다! 이제 Aurum Lifetime Club의 별이 되셨습니다!",
+          "failure": "Aurum Lifetime License를 활성화할 수 없습니다. 다시 시도해 주세요. {errorMessage}"
+        },
+        "activated": {
+          "label": "Aurum Lifetime Access 🌟",
+          "description": "당신은 Aurum Lifetime Access Club의 별입니다! 지원해 주셔서 감사드리며 클럽에 오신 것을 환영합니다!",
+          "additionalNote": "여러분의 지원 덕분에 외부의 영향을 받지 않고 새로운 기능을 추가하고 앱을 개선하는 데 집중할 수 있었습니다. 🙏"
+        }
+      }
     }
+  },
+  "searchModels": {
+    "label": "모델 검색...",
+    "noModelsFound": "모델을 찾을 수 없습니다."
   }
 }
