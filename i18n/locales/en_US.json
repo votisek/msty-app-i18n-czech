@@ -4,10 +4,7 @@
   "path": "Path",
   "discardChanges": "Discard Changes",
   "checkForUpdates": "Check for Updates",
-  "uninstall": "Uninstall {item}",
   "invalidJSON": "Invalid JSON",
-  "reset": "Reset {item}",
-  "save": "Save {item}",
   "eg": "e.g. {item}",
   "advancedConfiguration": "Advanced Configuration",
   "appData": "App Data",
@@ -16,35 +13,21 @@
   "cancel": "Cancel",
   "confirm": "Confirm",
   "new": "New {item}",
-  "add": "Add {item}",
   "edit": "Edit {item}",
   "select": "Select {item}",
-  "update": "Update {item}",
   "fetch": "Fetch {item}",
   "refetch": "Re-fetch {item}",
   "filter": "Filter {item}",
   "search": "Search {item}",
   "provider": "Provider",
-  "apiKey": "API Key",
   "learnMore": "Learn more.",
-  "aurumPerk": "Aurum Perk",
   "name": "Name",
   "model": "Model | Models",
   "modelId": "Model ID",
   "toggle": "Toggle {item}",
   "loading": "Loading {item}...",
   "license": "License",
-  "activate": "Activate {item}",
   "apiVersion": "API Version",
-  "mac": {
-    "locateInFolder": "Reveal in Finder"
-  },
-  "windows": {
-    "locateInFolder": "Show in File Explorer"
-  },
-  "linux": {
-    "locateInFolder": "Locate in File Manager"
-  },
   "settings": {
     "label": "Setting | Settings",
     "description": "Edit Msty's Settings",
@@ -66,7 +49,7 @@
         "label": "Network Proxy Configuration",
         "proxyAddress": {
           "label": "Proxy Address",
-          "description": "Specify proxy address to route network traffic. If no address is provided, Msty will auto-detect your device's network proxy address. If configuration is reset, you need to quit and restart Msty."
+          "description": "Specify proxy address to route network traffic. If configuration is reset, you may need to quit and restart Msty for the changes to fully take effect."
         },
         "reset": {
           "success": "Proxy configuration reset"
@@ -136,7 +119,6 @@
       }
     },
     "localAI": {
-      "label": "Local AI",
       "manageLocalAIModels": "Manage Local AI Models",
       "localAIService": {
         "label": "Local AI Service",
@@ -260,7 +242,6 @@
       }
     },
     "remoteModelProviders": {
-      "label": "Remote Model Provider | Remote Model Providers",
       "noModels": {
         "label": "No AI Model Providers Added Yet",
         "description": "Get started by adding a new provider such as Open AI, Mistral, Google Gemini, Perplexity, Open AI compatible endpoints, remote Ollama, remote Msty, etc."
@@ -362,5 +343,388 @@
   "searchModels": {
     "label": "Search models...",
     "noModelsFound": "No models found"
+  },
+  "localAI": {
+    "label": "Local AI",
+    "browseModels": "Browse & Download Models Online",
+    "startService": {
+      "failure": "Failed to start Local AI Service. Please try again."
+    }
+  },
+  "ggufModel": {
+    "label": "GGUF Model | GGUF Models",
+    "import": {
+      "confirmation": "How do you want to import the GGUF model(s)?",
+      "link": {
+        "description": "Choose {action} to create a symlink to the GGUF model(s) in the local AI models directory. This will save disk space but the model(s) will be unusable if the original file is removed or moved."
+      },
+      "copy": {
+        "description": "Choose {action} to create a copy of the GGUF model(s) in the local AI models directory. This will consume additional disk space but the model(s) will NOT be deleted if the original file is removed."
+      }
+    }
+  },
+  "remoteModelProviders": {
+    "label": "Remote Model Provider | Remote Model Providers"
+  },
+  "vaporMode": {
+    "label": "Vapor Mode",
+    "description": "Conversations won't be saved in your history and will disappear when you turn it off",
+    "isEnabledDescription": "Vapor Mode is Enabled"
+  },
+  "keyboardAndMouse": {
+    "keyPlusClick": "Key + Click",
+    "clickToEdit": "Click to edit",
+    "chatSelection": {
+      "adjacent": "Select adjacent conversations in a folder",
+      "nonAdjacent": "Select any non-adjacent conversations"
+    },
+    "skipConfirmationDialog": "Skip confirmation dialog for various actions",
+    "shortcuts": {
+      "usefulShortcuts": "Useful Shortcuts",
+      "copyLastAIMessage": "Copy Last AI Message",
+      "regenerateLastAIMessage": "Regenerate Last AI Message",
+      "editLastUserMessage": "Edit Last User Message",
+      "editLastAIMessage": "Edit Last AI Message",
+      "navigateBetweenMessages": "Navigate Between Messages"
+    },
+    "selection": "Selection | Selections",
+    "dropHere": "Drop anywhere here"
+  },
+  "aurumPerk": {
+    "label": "Aurum Perk",
+    "description": "This feature is only available to our Aurum license holders.",
+    "supportUs": "Please consider supporting our work by purchasing a license."
+  },
+  "themeTray": "Theme Tray",
+  "chat": "Chat | Chats",
+  "title": "Title",
+  "contextShield": "Context Shield",
+  "regenerate": "Regenerate {item}",
+  "collapse": "Collapse {item}",
+  "expand": "Expand {item}",
+  "sidebar": "Sidebar",
+  "folder": {
+    "label": "Folder | Folders",
+    "deleteItem": {
+      "label": "Delete Folder {name}",
+      "confirmation": "Delete Folder {name}?"
+    }
+  },
+  "allFolders": "All Folders",
+  "allConversations": "All Conversations",
+  "bookmark": "Bookmark | Bookmarks",
+  "copyToClipboard": "Copy {item} To Clipboard",
+  "fuzzySearch": "Fuzzy Search",
+  "matchCase": "Match Case",
+  "item": "Item | Items",
+  "view": "View {item}",
+  "message": "Message | Messages",
+  "itemOptions": " {item} Options",
+  "itemName": "{item} Name",
+  "modelInstructions": "Model Instructions",
+  "applyToThisItem": "Apply to this {item}",
+  "activateItem": {
+    "label": "Activate {item}",
+    "success": "{item} activated",
+    "failure": "Could not activate {item}"
+  },
+  "saveChanges": "Save Changes",
+  "saveItem": {
+    "label": "Save {item}",
+    "as": "Save {item} As",
+    "asDefaultFor": "Save as default for {item}",
+    "success": "{item} saved",
+    "failure": "Could not save {item}"
+  },
+  "resetItem": {
+    "label": "Reset {item}",
+    "success": "{item} reset",
+    "failure": "Could not reset {item}"
+  },
+  "uninstallItem": {
+    "label": "Uninstall {item}",
+    "confirmation": "Uninstall {item}?",
+    "success": "{item} uninstalled",
+    "failure": "Could not uninstall {item}"
+  },
+  "addItem": {
+    "label": "Add {item}",
+    "success": "{item} added",
+    "failure": "Could not add {item}"
+  },
+  "moveItem": {
+    "label": "Move {item}",
+    "success": "{item} moved",
+    "failure": "Could not move {item}"
+  },
+  "bookmarkItem": {
+    "label": "Bookmark {item}",
+    "success": "{item} bookmarked",
+    "failure": "Could not bookmark {item}"
+  },
+  "removeItem": {
+    "label": "Remove {item}",
+    "success": "{item} removed",
+    "failure": "Could not remove {item}"
+  },
+  "removeItemFrom": {
+    "success": "{item} removed from {source}",
+    "failure": "Could not remove {item} from {source}"
+  },
+  "clearAndSave": "Clear and Save",
+  "clearItem": {
+    "label": "Clear {item}"
+  },
+  "hideItem": {
+    "label": "Hide {item}"
+  },
+  "deleteItem": {
+    "label": "Delete {item}",
+    "confirmation": "Delete {item}?",
+    "success": "{item} deleted",
+    "failure": "Could not delete {item}"
+  },
+  "cloneItem": {
+    "label": "Clone {item}",
+    "success": "{item} cloned",
+    "failure": "Could not clone {item}"
+  },
+  "createItem": {
+    "label": "Create {item}",
+    "success": "{item} created",
+    "failure": "Could not create {item}"
+  },
+  "updateItem": {
+    "label": "Update {item}",
+    "confirmation": "Update {item}?",
+    "success": "{item} updated",
+    "failure": "Could not update {item}"
+  },
+  "mergeItem": {
+    "label": "Merge {item}",
+    "success": "{item} merged",
+    "failure": "Could not merge {item}"
+  },
+  "copyItem": {
+    "label": "Copy {item}",
+    "createNew": "Create New Copy",
+    "success": "{item} copied",
+    "failure": "Could not copy {item}"
+  },
+  "replaceItem": {
+    "label": "Replace {item}",
+    "success": "{item} replaced",
+    "failure": "Could not replace {item}"
+  },
+  "linkItem": {
+    "label": "Link {item}",
+    "success": "{item} linked",
+    "failure": "Could not link {item}"
+  },
+  "generateItem": {
+    "label": "Generate {item}",
+    "success": "{item} generated",
+    "failure": "Could not generate {item}"
+  },
+  "importItem": {
+    "label": "Import {item}",
+    "success": "{item} imported",
+    "failure": "Could not import {item}"
+  },
+  "bookmarkedMessagesAndChats": {
+    "label": "Bookmarked Messages and Chats",
+    "messages": {
+      "description": "Your bookmarked messages appear here. Get started by clicking on the bookmark icon from the chat message options.",
+      "deletedMessageNavigationFailure": "Could not navigate to message. The message was deleted."
+    },
+    "chats": {
+      "description": "Your bookmarked chats appear here. Get started by clicking on the bookmark chat option from the split chat options."
+    }
+  },
+  "splitChat": {
+    "label": "Split Chat | Split Chats",
+    "single": "Single Split Chat"
+  },
+  "splitPreset": {
+    "label": "Split Preset | Split Presets",
+    "deleteItem": {
+      "label": "Delete split preset {item}?",
+      "description": "This will delete the split preset and its configuration.",
+      "success": "Split preset {item} deleted"
+    },
+    "saveLayoutAs": "Save Split Layout As"
+  },
+  "showAllItem": "Show All {item}",
+  "dockItem": "Dock {item}",
+  "undockAllItem": "Undock All {item}",
+  "switchToItem": {
+    "label": "Switch to {item}"
+  },
+  "conversation": {
+    "label": "Conversation | Conversations",
+    "title": {
+      "label": "Conversation title",
+      "edit": "Edit Conversation Title"
+    },
+    "startChattingWithModel": "Start chatting with {modelName}",
+    "noConversationsFound": "No conversations found",
+    "noChatModelSelected": "No chat model selected",
+    "folder": {
+      "startNewConversation": "Start a new conversation in {folderName}",
+      "delete": {
+        "description": "This will delete all associated conversations and their chats and messages."
+      },
+      "deleteAllConversations": {
+        "description": "This will delete all conversations inside {folderName}."
+      }
+    },
+    "delete": {
+      "description": "This will also delete associated chat messages."
+    },
+    "merge": {
+      "description": "This will merge {itemCount} conversations to a single conversation with multiple splits."
+    },
+    "flattenItem": "Flatten {item}",
+    "cloneAndFlatten": "Clone and Flatten",
+    "inputBox": {
+      "placeholder": {
+        "focused": "Type your message here",
+        "unfocused": "Press / to focus here and start typing"
+      }
+    },
+    "shareWithSyncedSplits": "Share with Synced Splits",
+    "autoGenerateTitle": {
+      "label": "Auto-generate title using {model}",
+      "selectAModel": "Auto-generate title by selecting a model",
+      "selectDifferentModel": "{keyCombo} + Click to select a different model",
+      "failure": "Could not auto-generate conversation title"
+    },
+    "flowchat": {
+      "label": "Flowchat",
+      "description": "Click to see a visual map of your conversations"
+    }
+  },
+  "setupItem": {
+    "label": "Setup {item}",
+    "success": "{item} setup completed",
+    "failure": "Could not setup {item}"
+  },
+  "downloadItem": {
+    "label": "Download {item}",
+    "success": "{item} downloaded",
+    "failure": "Could not download {item}"
+  },
+  "continue": "Continue",
+  "onboarding": {
+    "title": "Welcome to Msty!",
+    "subTitle": "How would you like to get started?",
+    "setupLocalAI": {
+      "pros": {
+        "item1": "Use models like Meta Llama3, Microsoft Phi3, IBM Granite, Google Gemma, etc",
+        "item2": "Chat offline",
+        "item3": "Models are free to use and download",
+        "item4": "Install specialized models"
+      },
+      "cons": {
+        "item1": "Needs extra storage and memory"
+      }
+    },
+    "addRemoteModelsProvider": {
+      "pros": {
+        "item1": "Use OpenAI GPT, Azure, Claude Sonnet, Google Gemini, Perplexity, Remote Ollama, etc",
+        "item2": "Get started quickly",
+        "item3": "No download required"
+      },
+      "cons": {
+        "item1": "Requires internet connection to chat",
+        "item2": "Vendor charges may apply"
+      }
+    },
+    "downloadModel": {
+      "description": "Download {modelName} a {modelSize} model for Local AI. This is just to get you started, you can always download more models later. Model is only downloaded if it is not already available locally."
+    },
+    "inProgress": {
+      "description": "This process usually takes a few minutes depending on your internet speed. If it takes longer than 10-15 minutes, please restart the app. If the problem persists, please contact us."
+    },
+    "onboardWithOllama": {
+      "label": "Got Ollama?",
+      "description": "Get started quickly using Ollama models from {folderPath}"
+    },
+    "success": "That's it! You can now start chatting."
+  },
+  "locateInFolder": {
+    "mac": "Reveal in Finder",
+    "windows": "Show in File Explorer",
+    "linux": "Locate in File Manager"
+  },
+  "showItem": {
+    "label": "Show {item}"
+  },
+  "createOrImportItem": {
+    "label": "Create or Import {item}"
+  },
+  "apiKey": "API Key | API Keys",
+  "settingsAndConfigs": "Settings & Configs",
+  "selectItemLocation": "Select {item} location",
+  "icon": "Icon | Icons",
+  "defaultItem": "Default {item}",
+  "workspace": {
+    "label": "Workspace | Workspaces",
+    "defaultWorkspace": "Default Workspace",
+    "removeWorkspace": {
+      "label": "Remove Workspace",
+      "confirmation": "Remove Workspace {name}?"
+    },
+    "deleteFromDisk": {
+      "label": "Remove Workspace and Delete from Disk"
+    },
+    "createAndSwitch": {
+      "label": "Create and Swtich",
+      "title": "Stay Organized with Workspaces",
+      "description": "Keep Chats, Knowledge Stacks, Prompts, etc. organized separately by creating distinct workspaces in their own folders and shared across devices.",
+      "whatToCopy": "What to copy from the {workspaceName} workspace?",
+      "doNotCopyAnything": "Do not copy anything; start from scratch",
+      "apiKeysWarning": {
+        "description": "Copying your securely saved API keys from the {workspaceName} workspace without updating them first will not work if this workspace is imported on a different device.",
+        "updateAPIKeys": "Update API keys for the new workspace so I can use them across multiple-devices",
+        "doNotUpdateAPIKeys": "Do not update API keys for the new workspace. (I understand that any securely saved keys that get copied over will not work as expected if I import the workspace in a different device)"
+      }
+    },
+    "switch": {
+      "success": "Switched to {workspaceName} workspace",
+      "failure": "Could not switch to {workspaceName} workspace",
+      "directoryMissing": "Workspace directory {folderPath} is missing"
+    },
+    "remove": {
+      "confirmation": "Remove Workspace {workspaceName}?",
+      "description": "This will only remove the workspace and will NOT delete the saved data folder from disk.",
+      "withDataFolder": {
+        "label": "Also delete the data folder. This action cannot be undone.",
+        "description": "This will remove the workspace as well as delete the saved data folder from disk.",
+        "warning": "Workspace data folder at {folderPath} will be deleted"
+      }
+    }
+  },
+  "bookmarkedItem": "Bookmarked {item}",
+  "warning": "Warning",
+  "manageItem": "Manage {item}",
+  "itemInBeta": "{item} (Beta)",
+  "prompt": "Prompt | Prompts",
+  "quickPrompts": "Quick Prompts",
+  "modelSelector": "Model Selector",
+  "promptLibrary": {
+    "label": "Prompt Library"
+  },
+  "knowledgeStacks": {
+    "label": "Knowledge Stack | Knowledge Stacks"
+  },
+  "updateApp": {
+    "isAlreadyOnLatest": "You are already on the latest version",
+    "downloadingAndInstallingLatest": "Downloading and installing the latest version"
+  },
+  "modelsInfo": "Models Info",
+  "updateModelsInfo": {
+    "success": "Models Info updated to the latest version",
+    "failure": "Could not update Models Info to the latest verion"
   }
 }
