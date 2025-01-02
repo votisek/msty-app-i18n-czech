@@ -20,6 +20,7 @@
   "filter": "{item} 필터",
   "search": "{item} 검색",
   "provider": "공급자",
+  "apiKey": "API 키",
   "learnMore": "자세히 알아보기.",
   "name": "이름",
   "model": "모델 | 모델들",
@@ -333,9 +334,9 @@
           "failure": "Aurum 평생이용권을 활성화할 수 없습니다. 다시 시도해 주세요. {errorMessage}"
         },
         "activated": {
-          "label": "Aurum 평생 이용자 🌟",
+          "label": "Aurum 평생 이용자",
           "description": "Aurum 평생이용권 고객입니다! 구매해 주셔서 감사드리며 환영합니다!",
-          "additionalNote": "여러분의 서포트 덕분에 외부투자 없이 새로운 기능을 추가하고 앱을 개선하는 데 집중할 수 있었습니다. 🙏"
+          "additionalNote": "여러분의 서포트 덕분에 외부투자 없이 새로운 기능을 추가하고 앱을 개선하는 데 집중할 수 있었습니다."
         }
       }
     }
@@ -560,6 +561,17 @@
   "switchToItem": {
     "label": "{item}(으)로 전환"
   },
+  "workspace": {
+    "label": "작업공간 | 작업공간들",
+    "defaultWorkspace": "기본 작업공간",
+    "removeWorkspace": {
+      "label": "작업공간 제거",
+      "confirmation": "작업공간 {name}을 제거하시겠습니까?"
+    },
+    "deleteFromDisk": {
+      "label": "작업공간 제거 및 디스크에서 삭제"
+    }
+  },
   "conversation": {
     "label": "대화 | 대화들",
     "title": {
@@ -656,75 +668,5 @@
     "mac": "Finder에서 열기",
     "windows": "파일 탐색기에서 보기",
     "linux": "파일 관리자에서 찾기"
-  },
-  "showItem": {
-    "label": "Show {item}"
-  },
-  "createOrImportItem": {
-    "label": "Create or Import {item}"
-  },
-  "apiKey": "API Key | API Keys",
-  "settingsAndConfigs": "Settings & Configs",
-  "selectItemLocation": "Select {item} location",
-  "icon": "Icon | Icons",
-  "defaultItem": "Default {item}",
-  "workspace": {
-    "label": "작업공간 | 작업공간들",
-    "defaultWorkspace": "기본 작업공간",
-    "removeWorkspace": {
-      "label": "작업공간 제거",
-      "confirmation": "작업공간 {name}을 제거하시겠습니까?"
-    },
-    "deleteFromDisk": {
-      "label": "작업공간 제거 및 디스크에서 삭제"
-    },
-    "createAndSwitch": {
-      "label": "Create and Swtich",
-      "title": "Stay Organized with Workspaces",
-      "description": "Keep Chats, Knowledge Stacks, Prompts, etc. organized separately by creating distinct workspaces in their own folders and shared across devices.",
-      "whatToCopy": "What to copy from the {workspaceName} workspace?",
-      "doNotCopyAnything": "Do not copy anything; start from scratch",
-      "apiKeysWarning": {
-        "description": "Copying your securely saved API keys from the {workspaceName} workspace without updating them first will not work if this workspace is imported on a different device.",
-        "updateAPIKeys": "Update API keys for the new workspace so I can use them across multiple-devices",
-        "doNotUpdateAPIKeys": "Do not update API keys for the new workspace. (I understand that any securely saved keys that get copied over will not work as expected if I import the workspace in a different device)"
-      }
-    },
-    "switch": {
-      "success": "Switched to {workspaceName} workspace",
-      "failure": "Could not switch to {workspaceName} workspace",
-      "directoryMissing": "Workspace directory {folderPath} is missing"
-    },
-    "remove": {
-      "confirmation": "Remove Workspace {workspaceName}?",
-      "description": "This will only remove the workspace and will NOT delete the saved data folder from disk.",
-      "withDataFolder": {
-        "label": "Also delete the data folder. This action cannot be undone.",
-        "description": "This will remove the workspace as well as delete the saved data folder from disk.",
-        "warning": "Workspace data folder at {folderPath} will be deleted"
-      }
-    }
-  },
-  "bookmarkedItem": "Bookmarked {item}",
-  "warning": "Warning",
-  "manageItem": "Manage {item}",
-  "itemInBeta": "{item} (Beta)",
-  "prompt": "Prompt | Prompts",
-  "quickPrompts": "Quick Prompts",
-  "modelSelector": "Model Selector",
-  "promptLibrary": {
-    "label": "Prompt Library"
-  },
-  "knowledgeStacks": {
-    "label": "Knowledge Stack | Knowledge Stacks"
-  },
-  "updateApp": {
-    "isAlreadyOnLatest": "You are already on the latest version",
-    "downloadingAndInstallingLatest": "Downloading and installing the latest version"
-  },
-  "modelsInfo": "Models Info",
-  "updateModelsInfo": {
-    "success": "Models Info updated to the latest version",
-    "failure": "Could not update Models Info to the latest verion"
   }
 }

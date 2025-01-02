@@ -333,9 +333,9 @@
           "failure": "Could not activate your Aurum Lifetime License. Please try again. {errorMessage}"
         },
         "activated": {
-          "label": "Aurum Lifetime Access 🌟",
+          "label": "Aurum Lifetime Access",
           "description": "You are a star of the Aurum Lifetime Access Club! Thank you for supporting us and welcome to the club!",
-          "additionalNote": "Your support has allowed us to focus on adding new features and improving the app without any external influences. 🙏"
+          "additionalNote": "Your support has allowed us to focus on adding new features and improving the app without any external influences."
         }
       }
     }
@@ -679,7 +679,7 @@
       "label": "Remove Workspace and Delete from Disk"
     },
     "createAndSwitch": {
-      "label": "Create and Swtich",
+      "label": "Create and Switch",
       "title": "Stay Organized with Workspaces",
       "description": "Keep Chats, Knowledge Stacks, Prompts, etc. organized separately by creating distinct workspaces in their own folders and shared across devices.",
       "whatToCopy": "What to copy from the {workspaceName} workspace?",
